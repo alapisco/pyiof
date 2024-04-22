@@ -1,7 +1,7 @@
-from face_recognition.cascade_classifiers_loader import ICascadeClassifiersLoader
-from models.face_recognition_result import FaceRecognitionResult
+from pyiof.face_recognition.cascade_classifiers_loader import ICascadeClassifiersLoader
+from pyiof.models.face_recognition_result import FaceRecognitionResult
 from PIL import Image
-from img_processing.image_processor import IImageProcessor
+from pyiof.img_processing.image_processor import IImageProcessor
 
 
 class FaceRecognizer:

@@ -2,9 +2,9 @@ from PIL import Image
 import pytesseract
 from typing import Tuple
 
-from img_processing.interfaces.iimage_processor import IImageProcessor
-from models.ocr_result import OCRResult
-from ocr.interfaces.idictionary_manager import IDictionaryManager
+from pyiof.img_processing.interfaces.iimage_processor import IImageProcessor
+from pyiof.models.ocr_result import OCRResult
+from pyiof.ocr.interfaces.idictionary_manager import IDictionaryManager
 
 
 class OCRProcessorError(Exception):

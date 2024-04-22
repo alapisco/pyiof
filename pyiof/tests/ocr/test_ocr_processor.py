@@ -2,9 +2,9 @@ import os.path
 
 import pytest
 
-from ocr.ocr_processor import OCRProcessor
-from utils.common_utils import get_test_resources_dir
-from ocr.ocr_processor import OCRResult
+from pyiof.ocr.ocr_processor import OCRProcessor
+from pyiof.utils.common_utils import get_test_resources_dir
+from pyiof.ocr.ocr_processor import OCRResult
 
 
 @pytest.fixture

@@ -1,5 +1,5 @@
 from PIL import Image, ImageDraw
-from img_processing.interfaces.iimage_processor import IImageProcessor
+from pyiof.img_processing.interfaces.iimage_processor import IImageProcessor
 import numpy as np
 
 from cv2.typing import Rect

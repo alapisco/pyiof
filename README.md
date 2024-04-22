@@ -29,7 +29,7 @@ Concrete implementations of these interfaces are provided in `pyiof`
 
 ### Interfaces
 
-To provide `Face Recognition` capabilities, the class `FaceRecognizer` needs an implementation of interface:
+To provide Face Recognition capabilities, the class `FaceRecognizer` needs an implementation of interface:
 - `ICascadeClassifiersLoader`: Loads cascade classifier files to use for faces detection
 
 To provide `OCR` capabilities, the class `OCRProcessor` needs an implementation of interface:
@@ -70,16 +70,15 @@ Implements the `IDictionaryManager` interface to manage and check words against 
 #### OCR Processor
 Utilizes DictionaryManager to verify the OCR results and uses image processing to optimize text extraction.
 
-Example of OCR on image **canary_islands.png**
+Example of OCR on image **canary_islands.png** (located in the test resources dir)
 
 <img src="tests/resources/test_images/canary_islands.png" width="50%">
 
-
 ```python
-from ocr.ocr_processor import OCRProcessor
-from ocr.dictionary_manager import DictionaryManager
-from img_processing.image_processor import ImageProcessor
-from img_processing.image_files_manager import ImageFilesManager
+from pyiof.ocr.ocr_processor import OCRProcessor
+from pyiof.ocr.dictionary_manager import DictionaryManager
+from pyiof.img_processing.image_processor import ImageProcessor
+from pyiof.img_processing.image_files_manager import ImageFilesManager
 
 # Initialize the necessary components
 dictionary_manager = DictionaryManager()
@@ -88,7 +87,7 @@ ocr_processor = OCRProcessor(dictionary_manager, image_processor)
 image_files_manager = ImageFilesManager()
 
 # Load image
-image_source = 'tests/resources/test_images/canary_islands.png'
+image_source = '../pyiof/tests/resources/test_images/canary_islands.png'
 image = image_files_manager.load_image(image_source)
 
 # Extract text
@@ -97,31 +96,32 @@ print(ocr_result.text)
 ```
 Result
 ```text
-Coffee drinkers have much lower risk of
-bowel cancer recurrence, study finds
+Thousands protest against Canary
+islands’ ‘unsustainable’ tourism model
 
-Exclusive: Scientists say people with disease who drink two to four
-cups a day are less likely to see it return
+Local people say archipelago’s outdated industry made life
+unaffordable and prompts environmental emergencies
 
-@ People with the illness who consume two to four cups of coffee are also much less likely to die
-from any cause, the study shows. Photograph: d3sign/Getty Images
+@ Eleven members of Canarias se Agota have been on hunger strike for a week ta protest against
+the construction of two large luxury developments in southern Tenerife. Photograph: Désirée
+Martin/AFP/Getty
 
-People with bowel cancer who drink two to four cups of coffee a day are
-much less likely to see their disease come back, research has found.
+Thousands of people will join protests across the Canary islands on Saturday
+to call for an urgent rethink of the Spanish archipelago’s tourism industry
+and a freeze on tourist numbers, arguing that the current, decades-old model
+has made life unaffordable and environmentally unsustainable for local
+people.
 
-People with the illness who consume that amount are also much less likely to
-die from any cause, the study shows, which suggests coffee helps those
-diagnosed with the UK’s second biggest cancer killer.
+The protests - which will take place under the banner “Canarias tiene un
+limite” (The Canaries have a limit) - are being backed by environmental
+groups including Greenpeace, WWF, Ecologists in Action, Friends of the
+Earth and SEO/Birdlife.
 
-Experts said the findings were “promising” and speculated that, if other
-studies show the same effect, the 43,000 Britons a year diagnosed with
-bowel cancer may be encouraged to drink coffee. The disease claims about
-16,500 lives a year - 45 a day.
-
-A study of 1,719 bowel cancer patients in the Netherlands by Dutch and
-British researchers found that those who drank at least two cups of coffee
-had a lower risk of the disease recurring. The effect was dose dependent -
-those who drank the most saw their risk fall the most.
+“We’ve reached the point where the balance between the use of resources
+and the welfare of the population here has broken down - especially over the
+past year,” said Victor Martin, a spokesperson for the Canarias se Agota (The
+Canaries Have Had Enough) collective, which is helping to coordinate
+Saturday’s protests across the eight islands.
 ```
 ## Face Recognition Module 
 
@@ -151,10 +151,10 @@ on an image.
 Example of faces recognition on image **tests/resources/test_images/monthy-python.webp**
 
 ```python
-from face_recognition.face_recognizer import FaceRecognizer
-from face_recognition.cascade_classifiers_loader import CascadeClassifiersLoader
-from img_processing.image_processor import ImageProcessor
-from img_processing.image_files_manager import ImageFilesManager
+from pyiof.face_recognition.face_recognizer import FaceRecognizer
+from pyiof.face_recognition.cascade_classifiers_loader import CascadeClassifiersLoader
+from pyiof.img_processing.image_processor import ImageProcessor
+from pyiof.img_processing.image_files_manager import ImageFilesManager
 
 # Initialize the necessary components
 cascade_classifiers_loader = CascadeClassifiersLoader()
@@ -179,3 +179,33 @@ Result
 [array([130,  56, 240, 240], dtype=int32), array([762, 275, 211, 211], dtype=int32), array([477, 536, 214, 214], dtype=int32), array([916, 629, 293, 293], dtype=int32), array([161, 680, 349, 349], dtype=int32)]
 ```
 <img src="tests/resources/test_images/monty_python_face_recognition.png" width="50%">
+
+## Installation
+
+1. Clone or download this repository
+2. From root execute:
+```bash
+python3 -m pip install . 
+```
+
+This will install the pyiof library:
+
+
+```bash
+.
+.
+.
+
+Successfully built pyiof
+Installing collected packages: pyiof
+Successfully installed pyiof-0.1.0
+```
+
+## Uninstall
+```bash
+python3 -m pip uninstall pyiof 
+```
+
+## Releases
+
+- v 0.1.0 - April 22, 2024

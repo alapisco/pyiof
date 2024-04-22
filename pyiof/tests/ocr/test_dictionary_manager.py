@@ -2,8 +2,8 @@ import os.path
 
 import pytest
 
-from ocr.dictionary_manager import DictionaryManager, DictionaryManagerError
-from utils.common_utils import get_test_resources_dir
+from pyiof.ocr.dictionary_manager import DictionaryManager, DictionaryManagerError
+from pyiof.utils.common_utils import get_test_resources_dir
 
 
 def test_find_word_in_dictionary(dictionary_manager):

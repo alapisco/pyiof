@@ -1,7 +1,7 @@
-from face_recognition.face_recognizer import FaceRecognizer
-from face_recognition.cascade_classifiers_loader import CascadeClassifiersLoader
-from img_processing.image_processor import ImageProcessor
-from img_processing.image_files_manager import ImageFilesManager
+from pyiof.face_recognition.face_recognizer import FaceRecognizer
+from pyiof.face_recognition.cascade_classifiers_loader import CascadeClassifiersLoader
+from pyiof.img_processing.image_processor import ImageProcessor
+from pyiof.img_processing.image_files_manager import ImageFilesManager
 
 # Initialize the necessary components
 cascade_classifiers_loader = CascadeClassifiersLoader()

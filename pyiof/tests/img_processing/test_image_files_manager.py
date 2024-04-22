@@ -1,7 +1,7 @@
 import pytest
-from utils.common_utils import get_test_resources_dir
+from pyiof.utils.common_utils import get_test_resources_dir
 import os
-from img_processing.image_files_manager import UnidentifiedImageError
+from pyiof.img_processing.image_files_manager import UnidentifiedImageError
 from PIL import Image
 
 

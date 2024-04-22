@@ -1,6 +1,5 @@
 import pytest
 from PIL import Image
-from img_processing.image_processor import ImageProcessor
 import numpy as np
 
 

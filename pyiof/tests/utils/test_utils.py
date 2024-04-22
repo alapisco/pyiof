@@ -1,5 +1,5 @@
 import os
-from utils.common_utils import get_resources_dir, get_test_resources_dir, calculate_md5
+from pyiof.utils.common_utils import get_resources_dir, get_test_resources_dir, calculate_md5
 from pathlib import Path
 
 

@@ -1,8 +1,8 @@
 import pytest
 
-from face_recognition.face_recognizer import FaceRecognizer
-from models.face_recognition_result import FaceRecognitionResult
-from face_recognition.cascade_classifiers_loader import CascadeClassifiersLoader
+from pyiof.face_recognition.face_recognizer import FaceRecognizer
+from pyiof.models.face_recognition_result import FaceRecognitionResult
+from pyiof.face_recognition.cascade_classifiers_loader import CascadeClassifiersLoader
 
 
 @pytest.fixture

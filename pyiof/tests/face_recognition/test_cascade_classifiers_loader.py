@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import patch, MagicMock
-from face_recognition.cascade_classifiers_loader import CascadeClassifiersLoader
+from pyiof.face_recognition.cascade_classifiers_loader import CascadeClassifiersLoader
 
 
 def test_load_default_cascade_classifiers_success():

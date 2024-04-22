@@ -1,7 +1,7 @@
 import cv2
 
-from face_recognition.interfaces.icascade_classifiers_loader import ICascadeClassifiersLoader
-from utils.common_utils import get_resources_dir
+from pyiof.face_recognition.interfaces.icascade_classifiers_loader import ICascadeClassifiersLoader
+from pyiof.utils.common_utils import get_resources_dir
 import os
 
 

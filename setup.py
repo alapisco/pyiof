@@ -10,6 +10,9 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/alapisco/pyiof',
     packages=find_packages(),
+    package_data={
+        'pyiof': ['resources/*.*'],
+    },
     include_package_data=True,
     install_requires=[
         'pillow==10.2.0',

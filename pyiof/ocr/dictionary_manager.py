@@ -1,7 +1,7 @@
 import os
 from typing import Optional, Set
-from utils.common_utils import get_resources_dir
-from ocr.interfaces.idictionary_manager import IDictionaryManager
+from pyiof.utils.common_utils import get_resources_dir
+from pyiof.ocr.interfaces.idictionary_manager import IDictionaryManager
 
 
 class DictionaryManagerError(Exception):
