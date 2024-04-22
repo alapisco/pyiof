@@ -72,7 +72,7 @@ Utilizes DictionaryManager to verify the OCR results and uses image processing t
 
 Example of OCR on image **canary_islands.png** (located in the test resources dir)
 
-<img src="tests/resources/test_images/canary_islands.png" width="50%">
+<img src="pyiof/tests/resources/test_images/canary_islands.png" width="50%">
 
 ```python
 from pyiof.ocr.ocr_processor import OCRProcessor
@@ -178,7 +178,7 @@ Result
 ```text
 [array([130,  56, 240, 240], dtype=int32), array([762, 275, 211, 211], dtype=int32), array([477, 536, 214, 214], dtype=int32), array([916, 629, 293, 293], dtype=int32), array([161, 680, 349, 349], dtype=int32)]
 ```
-<img src="tests/resources/test_images/monty_python_face_recognition.png" width="50%">
+<img src="pyiof/tests/resources/test_images/monty_python_face_recognition.png" width="50%">
 
 ## Installation
 
