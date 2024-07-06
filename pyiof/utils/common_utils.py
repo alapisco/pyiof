@@ -30,8 +30,8 @@ def get_resources_dir() -> str:
     Returns:
         str: The absolute path to the 'resources' directory.
     """
-    module_dir = Path(__file__).resolve().parent.parent
-    return os.path.join(module_dir, 'resources')
+    root_dir = Path(__file__).resolve().parent.parent
+    return os.path.join(root_dir, 'resources')
 
 
 def get_test_resources_dir() -> str:
@@ -41,5 +41,5 @@ def get_test_resources_dir() -> str:
     Returns:
         str: The absolute path to the test 'resources' directory.
     """
-    test_resources_dir = Path(__file__).resolve().parent.parent
+    test_resources_dir = Path(__file__).resolve().parent.parent.parent
     return os.path.join(test_resources_dir, 'tests', 'resources')

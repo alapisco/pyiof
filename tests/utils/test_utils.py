@@ -13,8 +13,8 @@ def test_get_test_resources_dir():
 
 def test_get_resources_dir():
     resources_dir = get_resources_dir()
-    tests_dir = Path(__file__).parent.parent.parent
-    expected_resources_dir = os.path.join(tests_dir, 'resources')
+    root_dir = Path(__file__).parent.parent.parent
+    expected_resources_dir = os.path.join(root_dir, 'pyiof', 'resources')
     assert resources_dir == expected_resources_dir, f'Got "{resources_dir}" \n' \
                                                     f'Expected {expected_resources_dir}'
 

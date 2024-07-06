@@ -1,3 +1,5 @@
+<img src="pyiof-logo.jpg" width="30%">
+
 ## The pyiof library
 
 `pyiof` stands for Python **Image processing**, **OCR** and **Face Recognition**
@@ -178,7 +180,7 @@ Result
 ```text
 [array([130,  56, 240, 240], dtype=int32), array([762, 275, 211, 211], dtype=int32), array([477, 536, 214, 214], dtype=int32), array([916, 629, 293, 293], dtype=int32), array([161, 680, 349, 349], dtype=int32)]
 ```
-<img src="pyiof/tests/resources/test_images/monty_python_face_recognition.png" width="50%">
+<img src="tests/resources/test_images/monty_python_face_recognition.png" width="30%">
 
 ## Installation
 

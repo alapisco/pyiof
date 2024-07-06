@@ -12,6 +12,7 @@ class CascadeClassifiersLoader(ICascadeClassifiersLoader):
     Attributes:
         _face_cascade_classifier_files (list[str]): A list of file paths for the Haar cascade classifier files.
     """
+
     def __init__(self, face_cascade_classifier_files: list[str] = None):
         """
         Initializes the CascadeClassifiersLoader with optional specific classifier files.

@@ -11,13 +11,13 @@ setup(
     url='https://github.com/alapisco/pyiof',
     packages=find_packages(),
     package_data={
-        'pyiof': ['resources/*.*'],
+        'pyiof': ['resources/*.*', 'resources/haarcascades/*.*'],
     },
     include_package_data=True,
     install_requires=[
-        'pillow==10.2.0',
+        'pillow==10..0',
         'pytesseract==0.3.10',
-        'opencv-python==4.9.0.80',
+        'opencv-python==4.10.0.82',
         'numpy==1.26.4'
     ],
     extras_require={

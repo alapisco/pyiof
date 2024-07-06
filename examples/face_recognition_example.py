@@ -10,7 +10,7 @@ face_recognizer = FaceRecognizer(cascade_classifiers_loader, image_processor)
 image_files_manager = ImageFilesManager()
 
 # Load image
-image_source = 'tests/resources/test_images/monthy-python.webp'
+image_source = '../tests/resources/test_images/monthy-python.webp'
 image = image_files_manager.load_image(image_source)
 
 # Extract faces regions
