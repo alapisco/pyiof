@@ -74,7 +74,7 @@ Utilizes DictionaryManager to verify the OCR results and uses image processing t
 
 Example of OCR on image **canary_islands.png** (located in the test resources dir)
 
-<img src="pyiof/tests/resources/test_images/canary_islands.png" width="50%">
+<img src="tests/resources/test_images/canary_islands.png" width="50%">
 
 ```python
 from pyiof.ocr.ocr_processor import OCRProcessor
