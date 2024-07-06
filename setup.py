@@ -22,7 +22,8 @@ setup(
     ],
     extras_require={
         'dev': [
-            'pytest==8.1.1'
+            'pytest==8.1.1',
+            'setuptools 70.2.0'
         ]
     },
     classifiers=[
